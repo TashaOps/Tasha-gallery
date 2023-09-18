@@ -13,10 +13,10 @@ post {
    stages {
        stage('Clone Repo'){
            steps{
-               git 'https://github.com/TashaOps/Tasha-gallery'
+               git 'https://github.com/TashaOps/Tasha-gallery.git'
            }
        }
-       stage('install dependancies'){
+       stage('install dependancies')
            steps{
                sh 'npm install'
                sh 'npm install express'
