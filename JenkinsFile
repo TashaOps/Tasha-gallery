@@ -30,7 +30,7 @@ post {
        
         stage('slack notification') {
           steps {
-            slackSend color: 'good', message: "done successfully", sendAsText: true
+            slackSend color: 'good', message: "successfully", sendAsText: true
           }
        }
 
